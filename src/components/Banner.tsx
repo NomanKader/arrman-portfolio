@@ -1,20 +1,30 @@
 import BeamGridBackground from "./lightswind/BeamGridBackground";
 import { TypingText } from "./lightswind/TypingText";
 import TechShowcase from "./TechShowcase";
+import reactIcon from "../assets/react.svg";
+import htmlIcon from "../assets/html.svg";
+import cssIcon from "../assets/css.svg";
+import tailwindIcon from "../assets/tailwind.svg";
+import jsIcon from "../assets/javascript.svg";
+import nodeJsIcon from "../assets/node.svg";
+import expressJsIcon from "../assets/expressJs.svg";
+import SocialShowcase from "./SocialShowcase";
 
 export default function Banner({
   image,
   title,
   subheading,
-  paragraph
+  paragraph,
 }: {
-  image:string;
+  image: string;
   title: string;
   subheading: string;
-  paragraph:string
-}) {
+  paragraph: string;
+}) 
+{
+  const techIcons: string[] = [htmlIcon,cssIcon,tailwindIcon,jsIcon,reactIcon,nodeJsIcon,expressJsIcon];
   return (
-    <div className="w-full min-h-125 flex items-center justify-center cursor-none p-5">
+    <div className="w-full h-160 flex items-center justify-center cursor-none p-5">
       <BeamGridBackground
         gridSize={40}
         gridColor="#d1d5db"
@@ -30,8 +40,11 @@ export default function Banner({
       />
 
       <div className="max-w-3xl w-full flex flex-col items-center z-20 text-center gap-4">
-
-        <img src={image} alt="profile-picture" className="w-50 h-50 border-2 rounded-full overflow-hidden"/>
+        <img
+          src={image}
+          alt="profile-picture"
+          className="w-50 h-50 border-2 rounded-full overflow-hidden"
+        />
 
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
           {title}
@@ -46,11 +59,15 @@ export default function Banner({
           {subheading}
         </TypingText>
 
-        <p className="text-sm tracking-wider text-center">
-          {paragraph}
-        </p>
+        <p className="text-sm tracking-wider text-center">{paragraph}</p>
 
-        <TechShowcase className="w-auto flex flex-row justify-center items-center gap-5"/>
+        <TechShowcase
+          className="w-full flex flex-row justify-center items-center gap-5"
+          showCaseText="Tech Stack"
+          techIcons={techIcons}
+        />
+
+        <SocialShowcase/>
       </div>
     </div>
   );
