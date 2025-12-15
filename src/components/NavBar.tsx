@@ -7,7 +7,7 @@ export default function NavBar() {
 
       <div className="flex flex-row items-center gap-10">
         <p>Portfolio</p>
-        <p>Work</p>
+        <p>Works</p>
       </div>
 
       <ToggleTheme

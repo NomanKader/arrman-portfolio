@@ -24,7 +24,7 @@ export default function Banner({
 {
   const techIcons: string[] = [htmlIcon,cssIcon,tailwindIcon,jsIcon,reactIcon,nodeJsIcon,expressJsIcon];
   return (
-    <div className="w-full h-160 flex items-center justify-center cursor-none p-5">
+    <div className="w-full h-150 flex items-center justify-center cursor-none">
       <BeamGridBackground
         gridSize={40}
         gridColor="#d1d5db"
