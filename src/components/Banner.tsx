@@ -29,8 +29,8 @@ export default function Banner({
         gridSize={40}
         gridColor="#d1d5db"
         darkGridColor="#1f2937"
-        beamColor="rgba(0,180,255,0.8)"
-        darkBeamColor="rgba(0,255,255,0.8)"
+        beamColor="rgba(0, 180, 255,0.8)"
+        darkBeamColor="rgba(2, 247, 60)"
         beamCount={8}
         extraBeamCount={3}
         beamThickness={3}

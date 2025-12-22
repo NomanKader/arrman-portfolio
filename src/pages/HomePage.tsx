@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import profilePicture from "../assets/img/profilePicture.png";
 import HistorySection from "../components/HistorySection";
+import CollabSection from "../components/collabSection";
 
 export default function HomePage() {
   const introText =
@@ -15,8 +16,8 @@ export default function HomePage() {
           paragraph={introText}
         />
       </div>
-
       <HistorySection/>
+      <CollabSection/>
     </>
   );
 }

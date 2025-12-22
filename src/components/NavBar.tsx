@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ToggleTheme } from "./lightswind/ToggleTheme";
 
 export default function NavBar() {
@@ -6,8 +7,8 @@ export default function NavBar() {
       <h1>Portfolio</h1>
 
       <div className="flex flex-row items-center gap-10">
-        <p>Portfolio</p>
-        <p>Works</p>
+        <Link to="/">Portfolio</Link>
+        <Link to="/works">Works</Link>
       </div>
 
       <ToggleTheme
