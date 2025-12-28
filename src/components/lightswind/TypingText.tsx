@@ -2,7 +2,7 @@
 
 import { motion, useAnimation } from "framer-motion";
 import type { Variants } from "framer-motion";
-import React, { ElementType, ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState, type ElementType, type ReactNode } from "react";
 import { cn } from "../../lib/utils";
 
 export interface TypingTextProps {
@@ -39,7 +39,7 @@ export const TypingText = ({
     const extractText = (node: ReactNode): string => {
       if (typeof node === "string" || typeof node === "number") return node.toString();
       if (Array.isArray(node)) return node.map(extractText).join("");
-      if (React.isValidElement(node)) return extractText(node.props.children);
+      if (React.isValidElement(node)) return extractText((node as React.ReactElement<any>).props.children);
       return "";
     };
     setTextContent(extractText(children));
