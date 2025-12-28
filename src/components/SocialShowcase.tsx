@@ -4,7 +4,7 @@ import gitHubIcon from "../assets/gitHub.svg";
 export default function SocialShowcase() {
   return (
     <div className="w-full flex flex-row justify-between items-center">
-      <div className="flex flex-row items-center p-3 gap-2">
+      <div className="flex flex-row items-center gap-2">
         <a href="https://www.linkedin.com/in/arr-mann-130126379/">
           <img
             src={linkedInIcon}
