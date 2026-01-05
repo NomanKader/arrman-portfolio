@@ -12,7 +12,7 @@ export default function ServiceCard({ serviceInfo }: ServiceCardProps) {
   return (
     <div
       className="
-        relative w-[30%]    
+        relative w-full md:w-[45%] lg:w-[30%]
         rounded-2xl
         p-7
         flex flex-col gap-4

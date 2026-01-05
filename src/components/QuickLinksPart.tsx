@@ -1,6 +1,6 @@
 export default function QuickLinksPart() {
   return (
-    <div className="w-[30%] flex flex-col items-center gap-4 text-center">
+    <div className="w-full md:w-[30%] flex flex-col items-center gap-4 text-center">
       <h1 className="text-2xl font-bold">Quick Links</h1>
 
       <ul className="flex flex-col items-center gap-2">

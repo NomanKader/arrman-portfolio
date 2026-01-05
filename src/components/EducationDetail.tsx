@@ -3,7 +3,7 @@ import YICLogo from "../assets/img/YIC.png";
 
 export default function EducationDetail() {
   return (
-    <div className="w-[50%] h-auto flex flex-col flex-wrap items-center gap-10 mb-15 -mt-7 px-5 border-r-2">
+    <div className="w-full md:w-[50%] h-auto flex flex-col flex-wrap items-center gap-10 mb-15 mt-10 px-5 border-r-0 md:border-r-2">
       <h1 className="sm:text-sm md:text-2xl lg:text-[28px] animate-slide-right ">Education</h1>
 
       <div className="w-full flex flex-row flex-wrap justify-center p-3 gap-8">

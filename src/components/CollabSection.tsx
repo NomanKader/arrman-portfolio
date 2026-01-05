@@ -22,7 +22,7 @@ export default function CollabSection() {
           Work with me
         </h1>
 
-        <p className="w-[700px] sm:text-sm md:text-lg lg:text-xl font-light tracking-wide">
+        <p className="w-full max-w-[700px] sm:text-sm md:text-lg lg:text-xl font-light tracking-wide">
           With 0 years + of experience and 0+ successful projects delivered, I bring proven expertise in front-end and back-end development. Let's create something amazing together.
         </p>
 

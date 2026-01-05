@@ -22,7 +22,7 @@ export default function ServiceOffer(){
                 I offer comprehensive front-end and back-end development services to bring your digital ideas to life. From concept to deployment, I've got you covered.
             </span>
 
-            <div className="w-full h-auto flex flex-row items-center justify-center p-4 gap-6">
+            <div className="w-full h-auto flex flex-wrap items-center justify-center p-4 gap-6">
                 {serviceInfo.map((service, index) => (
                     <ServiceCard key={index} serviceInfo={service}/>
                 ))}

@@ -3,18 +3,16 @@ import { ToggleTheme } from "./lightswind/ToggleTheme";
 
 export default function NavBar() {
   return (
-    <div className="w-full h-20 sticky top-0 flex flex-row justify-between items-center p-4 z-70 backdrop-blur-2xl">
-      <h1>Portfolio</h1>
+    <header className="sticky top-0 z-50 w-full h-20 flex items-center justify-between px-8 backdrop-blur-xl bg-black/20">
+      
+      <h1 className="text-lg font-semibold">Portfolio</h1>
 
-      <div className="flex flex-row items-center gap-10">
-        <Link to="/">Portfolio</Link>
-        <Link to="/works">Works</Link>
-      </div>
+      <nav className="flex items-center gap-10">
+        <Link to="/" className="hover:opacity-70">Portfolio</Link>
+        <Link to="/works" className="hover:opacity-70">Works</Link>
+      </nav>
 
-      <ToggleTheme
-        duration={600}
-        animationType="circle-spread"
-      />
-    </div>
+      <ToggleTheme duration={600} animationType="circle-spread" />
+    </header>
   );
 }

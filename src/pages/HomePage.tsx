@@ -11,14 +11,12 @@ export default function HomePage() {
     "Experienced in front-end and back-end development, I combine clean design with strong logic to build efficient, user-friendly web applications.";
   return (
     <>
-      <div className="w-full h-screen" id="about">
-        <Banner
+      <Banner
           image={profilePicture}
           title="Arr Mann"
           subheading="I'm a Full-Stack Developer"
           paragraph={introText}
-        />
-      </div>
+      />
       <HistorySection/>
       <CollabSection/>
       <WorkDoneSection/>

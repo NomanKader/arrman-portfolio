@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactPart() {
   return (
-    <div className="w-[30%] flex flex-col items-center gap-6 text-center">
+    <div className="w-full md:w-[30%] flex flex-col items-center gap-6 text-center">
       <h1 className="sm:text-sm md:text-2xl lg:text-[24px] font-bold">
         Get In Touch
       </h1>
